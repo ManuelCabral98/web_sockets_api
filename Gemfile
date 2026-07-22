@@ -47,4 +47,10 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+
+  # JSON Web Token
+  gem 'jwt'
+
+  # serializer
+  gem 'active_model_serializers'
 end
