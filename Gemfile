@@ -49,8 +49,8 @@ group :development, :test do
   gem "rubocop-rails-omakase", require: false
 
   # JSON Web Token
-  gem 'jwt'
+  gem "jwt"
 
   # serializer
-  gem 'active_model_serializers'
+  gem "active_model_serializers"
 end

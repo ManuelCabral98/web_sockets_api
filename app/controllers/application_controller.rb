@@ -16,5 +16,6 @@ class ApplicationController < ActionController::API
         @current_user = User.find_by(id: payload[:user_id]) if payload
 
         # return HTTP 401 if @current_user = nil
-        render json: { error: 'Unauthorized' }, status :unauthorized unless @current_user
+        render json: { error: 'Unauthorized' }, status: :unauthorized unless @current_user
+    end
 end

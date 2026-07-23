@@ -28,7 +28,7 @@ class UsersController < ApplicationController
 
   def destroy
   end
-  
+
   private
   def user_params
     # establish what params are allowed when creating a new user

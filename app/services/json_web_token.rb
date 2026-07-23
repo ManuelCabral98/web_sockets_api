@@ -7,6 +7,7 @@ class JsonWebToken
 
         # encode data
         JWT.encode(payload, SECRET_KEY, 'HS256')
+    end
 
     def self.decode(token)
         decoded = JWT.decode(token, SECRET_KEY, true, { algorithm: 'HS256' })
@@ -16,3 +17,4 @@ class JsonWebToken
     rescue JWT::DecodeError
         nil
     end
+end

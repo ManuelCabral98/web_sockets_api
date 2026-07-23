@@ -11,8 +11,10 @@ class SessionsController < ApplicationController
     else
       # returns 'Not authenticated' (401)
       render json: { success: false, message: "Invalid credentials!" }, status: :unauthorized
+    end
   end
 
   def destroy
   end
+
 end
